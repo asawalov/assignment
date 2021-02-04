@@ -1,0 +1,34 @@
+{%  extends 'form/main.html' %}
+
+{% block content %}
+
+
+<br>
+
+
+	<div class="col">
+		<h5>All users</h5>
+		<hr>
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Name</th>
+					<th>Designation</th>
+					<th>Role</th>
+
+				</tr>
+				{% for i in all%}
+				<tr>
+					<td> {{i.name}} </td>
+					<td> {{i.role}} </td>
+					<td> {{i.designation}} </td>
+
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
